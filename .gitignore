@@ -1,0 +1,33 @@
+# folders
+artifacts/build-info/
+artifacts/contracts/**/*.dbg.json
+artifacts/contracts/**/*.sol
+build/
+cache/
+dist/**/*.ts
+dist/**/*.d.ts
+dist/factories/
+lib/
+node_modules/
+
+# files
+*.env
+*.log
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# excepted artifacts
+!artifacts/contracts/dapphub/WETH9.sol
+!artifacts/contracts/maker/Dai.sol
+!artifacts/contracts/uniswap-v2/core/UniswapV2Pair.sol
+!artifacts/contracts/uniswap-v2/periphery/UniswapV2Router02.sol
+!artifacts/contracts/wbtc/WBTC.sol
+
+# excepted types
+!dist/Dai.d.ts
+!dist/UniswapV2Pair.d.ts
+!dist/UniswapV2Router02.d.ts
+!dist/WETH9.d.ts
+!dist/WBTC.d.ts
