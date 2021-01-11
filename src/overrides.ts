@@ -1,5 +1,15 @@
 import { SolcUserConfig } from "hardhat/types";
 
+const centre = {
+  version: "0.6.12",
+  settings: {
+    optimizer: {
+      enabled: true,
+      runs: 10000000,
+    },
+  },
+};
+
 const dapphub = {
   version: "0.4.23",
   settings: {
@@ -50,6 +60,24 @@ const wbtc = {
 };
 
 const overrides: Record<string, SolcUserConfig> = {
+  "contracts/centre/AbstractFiatTokenV1.sol": centre,
+  "contracts/centre/AbstractFiatTokenV2.sol": centre,
+  "contracts/centre/Address.sol": centre,
+  "contracts/centre/Blacklistable.sol": centre,
+  "contracts/centre/ECRecover.sol": centre,
+  "contracts/centre/EIP712.sol": centre,
+  "contracts/centre/EIP712Domain.sol": centre,
+  "contracts/centre/FiatTokenV1_1.sol": centre,
+  "contracts/centre/FiatTokenV1.sol": centre,
+  "contracts/centre/FiatTokenV2.sol": centre,
+  "contracts/centre/GasAbstraction.sol": centre,
+  "contracts/centre/IERC20.sol": centre,
+  "contracts/centre/Ownable.sol": centre,
+  "contracts/centre/Pausable.sol": centre,
+  "contracts/centre/Permit.sol": centre,
+  "contracts/centre/Rescuable.sol": centre,
+  "contracts/centre/SafeERC20.sol": centre,
+  "contracts/centre/SafeMath.sol": centre,
   "contracts/dapphub/WETH9.sol": dapphub,
   "contracts/maker/Dai.sol": maker,
   "contracts/maker/LibNote.sol": maker,

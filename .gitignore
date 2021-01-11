@@ -19,6 +19,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # excepted artifacts
+!artifacts/contracts/centre/FiatTokenV2.sol
 !artifacts/contracts/dapphub/WETH9.sol
 !artifacts/contracts/maker/Dai.sol
 !artifacts/contracts/uniswap-v2/core/UniswapV2Pair.sol
@@ -27,6 +28,7 @@ yarn-error.log*
 
 # excepted types
 !dist/Dai.d.ts
+!dist/FiatTokenV2.d.ts
 !dist/UniswapV2Pair.d.ts
 !dist/UniswapV2Router02.d.ts
 !dist/WETH9.d.ts
